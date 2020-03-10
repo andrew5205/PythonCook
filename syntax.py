@@ -24,3 +24,13 @@ tuples = ("Hello", "abc def", 23, False)
 print(tuples)
 print(tuples[1])
 #tuples[0] = "a"     # TypeError: 'tuple' object does not support item assignment
+
+
+# print("Hello" + 42)			# output: TypeError
+print("Hello" + str(42))    # # output: Hello 42
+
+total = 35
+user_val = "26"
+# total = total + user_val		# output: TypeError
+total = total + int(user_val)		# total will be 61
+print(total)
